@@ -4,3 +4,4 @@ transformers
 numpy
 scikit-learn
 gdown
+lightgbm
