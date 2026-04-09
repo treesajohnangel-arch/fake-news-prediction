@@ -1,10 +1,18 @@
 
 import gdown, os, zipfile
 
-if not os.path.exists('/content/models/bert_model'):
-    gdown.download('https://drive.google.com/file/d/1X5C5yhOgc8vcbpfladA6yKoU5s9_JM9m/view?usp=sharing', '/content/bert_model.zip', fuzzy=True)
-    with zipfile.ZipFile('/content/bert_model.zip', 'r') as z:
-        z.extractall('/content/models/bert_model')
+BERT_PATH = '/tmp/bert_model'
+
+if not os.path.exists(BERT_PATH):
+    print("Downloading BERT model...")
+    gdown.download(
+        'https://drive.google.com/file/d/1X5C5yhOgc8v...',  # your actual link
+        '/tmp/bert_model.zip',
+        fuzzy=True
+    )
+    with zipfile.ZipFile('/tmp/bert_model.zip', 'r') as z:
+        z.extractall('/tmp/bert_model')
+    print("✅ BERT ready!")
 
 
 import streamlit as st
@@ -133,8 +141,8 @@ st.markdown("""
 def load_models():
     with open('/content/models/lr_model.pkl','rb') as f: lr=pickle.load(f)
     with open('/content/models/gb_model.pkl','rb') as f: tfidf,gb=pickle.load(f)
-    tok=DistilBertTokenizer.from_pretrained('/content/models/bert_model')
-    bert=DistilBertForSequenceClassification.from_pretrained('/content/models/bert_model'); bert.eval()
+    tok=DistilBertTokenizer.from_pretrained('/tmp/bert_model')
+    bert=DistilBertForSequenceClassification.from_pretrained('/tmp/bert_model'); bert.eval()
     return lr,tfidf,gb,tok,bert
 
 with st.spinner("Loading models..."): lr_model,tfidf,gb_model,tokenizer,bert_model=load_models()
