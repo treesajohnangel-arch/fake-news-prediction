@@ -139,8 +139,8 @@ st.markdown("""
 
 @st.cache_resource
 def load_models():
-    with open('/content/models/lr_model.pkl','rb') as f: lr=pickle.load(f)
-    with open('/content/models/gb_model.pkl','rb') as f: tfidf,gb=pickle.load(f)
+    with open('models/lr_model.pkl','rb') as f: lr=pickle.load(f)
+    with open('models/gb_model.pkl','rb') as f: tfidf,gb=pickle.load(f)
     tok=DistilBertTokenizer.from_pretrained('/tmp/bert_model')
     bert=DistilBertForSequenceClassification.from_pretrained('/tmp/bert_model'); bert.eval()
     return lr,tfidf,gb,tok,bert
