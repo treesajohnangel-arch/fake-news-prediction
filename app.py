@@ -10,8 +10,9 @@ if not os.path.exists(BERT_PATH):
     'https://drive.google.com/uc?id=1X5C5yhOgc8vcbpfladA6yKoU5s9_JM9m',
     '/tmp/bert_model.zip',
     quiet=False
-)
     )
+
+    
     with zipfile.ZipFile('/tmp/bert_model.zip', 'r') as z:
         z.extractall('/tmp/bert_model')
 
