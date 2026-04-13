@@ -7,10 +7,10 @@ BERT_PATH = '/tmp/bert_model'
 
 if not os.path.exists(BERT_PATH):
     gdown.download(
-        'https://drive.google.com/file/d/1X5C5yhOgc8vcbpfladA6yKoU5s9_JM9m/view?usp=sharing',  # ← paste your actual Drive link
-        '/tmp/bert_model.zip',
-        fuzzy=True,
-        quiet=False
+    'https://drive.google.com/uc?id=1X5C5yhOgc8vcbpfladA6yKoU5s9_JM9m',
+    '/tmp/bert_model.zip',
+    quiet=False
+)
     )
     with zipfile.ZipFile('/tmp/bert_model.zip', 'r') as z:
         z.extractall('/tmp/bert_model')
