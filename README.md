@@ -136,12 +136,8 @@ Evaluated all models using:
 
 ## 🖥️ Application Screenshots
 
-> *(Screenshots will be added after deployment)*
-
 ### Home Page
-<!-- Add screenshot here -->
+![Home Page](images/front_pic_.jpeg)
 
 ### Prediction Output
-<!-- Add screenshot here -->
-
----
+![Prediction Output](images/prediction_pic.jpeg)
