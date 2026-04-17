@@ -21,9 +21,9 @@
 
 | Name | GitHub |
 |---|---|
-| Anagha Suresh | 
-| Angel Treesa John |
-| Yadhu |
+| Anagha Suresh | anaghasuresh0808
+| Angel Treesa John | treesajohnngel-arch
+| Yadhu | yadhu225
 
 ---
 
