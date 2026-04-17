@@ -126,11 +126,12 @@ Evaluated all models using:
 
 | Model | Accuracy | Precision | Recall | F1-Score |
 |---|---|---|---|---|
-| Logistic Regression | — | — | — | — |
-| Gradient Boosting | — | — | — | — |
-| DistilBERT Transformer | — | — | — | — |
+| Logistic Regression | 0.7364 | 0.7730 | 0.7535 | 0.7631 |
+| Gradient Boosting | 0.7435 | 0.7831 | 0.7535 | 0.7680 |
+| DistilBERT Transformer | 0.6559 | 0.6894 | 0.7087 | 0.6989 |
 
-> ✅ **Best Model:** *(to be updated after evaluation)*
+> ✅ **Best Model:**
+> Gradient Boosting
 
 ---
 
