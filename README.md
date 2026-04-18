@@ -142,3 +142,8 @@ Evaluated all models using:
 
 ### Prediction Output
 ![Prediction Output](images/prediction_pic.jpeg)
+
+---
+
+## Link to the Website
+https://fake-news-prediction-468mr4pq7emsafuch2zfgg.streamlit.app/
