@@ -143,6 +143,22 @@ Evaluated all models using:
 ### Prediction Output
 ![Prediction Output](images/prediction_pic.jpeg)
 
+## 📈 Model Performance Plots
+
+### Confusion Matrix
+
+#### Logistic Regression
+![Confusion Matrix - Logistic Regression](images/confusion_matrix_lr.jpeg)
+
+#### Gradient Boosting
+![Confusion Matrix - Gradient Boosting](images/confusion_matrix_gb.jpeg)
+
+#### DistilBERT
+![Confusion Matrix - DistilBERT](images/confusion_matrix_bert.jpeg)
+
+### ROC-AUC Curve
+![ROC-AUC Curve](images/roc_auc.jpeg)
+
 ---
 
 ## Link to the Website
