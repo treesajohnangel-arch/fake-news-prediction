@@ -148,7 +148,7 @@ Evaluated all models using:
 ### Confusion Matrix
 
 #### Logistic Regression
-![Confusion Matrix - Logistic Regression](images/confusion_matrix_lr.jpeg)
+![Confusion Matrix - Logistic Regression](images/confusion_matrix_ls.jpeg)
 
 #### Gradient Boosting
 ![Confusion Matrix - Gradient Boosting](images/confusion_matrix_gb.jpeg)
