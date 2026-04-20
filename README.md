@@ -118,7 +118,7 @@ Evaluated all models using:
   - `DistilBert.pkl`
 
 ### Stage 10: Documentation
-- README (this file), PPT presentation, GitHub activity profiles
+- Folder with all the individual commits has been shared in this repository along with the presentation file(pdf).
 
 ---
 
